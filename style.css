@@ -1,0 +1,553 @@
+:root{
+    --light-pink:#FFC9F0;
+    --black:#000000;
+    --white:#ffffff;
+    --light-yellow:#FFE68C;
+    --light-blue:#9DDCFF;
+    --dark-pink:#F384D4;
+    --dark-blue:#5AB5E8;
+    --dark-yellow:#EECD56;
+    --light-green:#7CF072;
+    --dark-green:#4ED543;
+    --btn-stroke-pink:#DB4A90;
+    --btn-bg-pink:#F072CD;
+
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: "Inter", sans-serif;
+    font-size: 1.6rem;   
+}
+
+p{
+    font-weight: 400;
+    font-size: 2.4rem;
+}
+
+h1{
+    font-weight: 600;
+    font-size:6.4rem;
+}
+
+h2{
+    font-family: "Handlee", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size:3.2rem;
+    
+}
+
+h3{
+    font-weight: 500;
+    font-size:2.8rem;
+}
+
+h4{
+    font-family: "Handlee", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size:2.4rem;
+    
+}
+/*  Common CSS */
+
+.container{
+    max-width:1230px;
+    padding: 0 3rem;
+    margin:0 auto;
+    /* background-color:#bce7f8; */
+    background-image: url("images/bgpatterns.svg"); 
+    background-repeat: no-repeat;
+}
+
+
+a{
+    display: inline-block;
+    text-decoration: none;
+    color:inherit
+}
+
+li{
+    list-style: none;
+}
+
+.space{
+    padding:7rem 0;
+}
+
+.t-center{
+    text-align: center;
+}
+
+.d-flex{
+    display:flex;
+}
+
+.e-center{
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-2{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+}
+.grid-3{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 0 3rem;
+}
+
+.cta{
+    background-color: var(--black);
+    padding: 1.8rem 5.8rem;
+    color: var(--white);
+    font-weight:700;
+    font-size: 2.4rem;
+    margin-top: 3rem;
+}
+
+.bg-pink-stroke{
+    background-color: var(--btn-bg-pink);
+    border:0.2rem solid var(--btn-stroke-pink);
+}
+
+.bg-blue-stroke{
+    background-color: var(--light-blue);
+    border:0.2rem solid var(--dark-blue);
+}
+
+.bg-yellow-stroke{
+    background-color: var(--light-yellow);
+    border:0.2rem solid var(--dark-yellow);
+}
+
+.bg-green-stroke{
+    background-color: var(--light-green);
+    border:0.2rem solid var(--dark-green);
+}
+
+label{
+    border-left:0.2rem solid black;
+    padding-left: 0.1rem;
+    font-size:3.2rem;
+}
+
+input[type=text] {
+    border: none;
+    border-bottom: 0.2rem solid black;
+    font-size: 2.8rem;
+    padding-left:2rem;
+    width: 100%;
+  }
+.form-control{
+    margin-bottom: 6rem;
+    font-family: "Handlee", cursive;
+}
+
+h2 span{
+    
+    background-color: var(--light-pink);
+    display: inline-block;
+    box-shadow: 0 4px 4px 0 rgba(0,0,0,0.25);
+
+}
+
+/* Header CSS */
+
+.site-header-row{
+    padding-top: 4.3rem;
+    padding-right:1rem;
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    grid-gap: 0 15.9rem;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.logo{
+    padding: 1rem 0;
+}
+
+.logo img{
+    width:100%;
+}
+
+.site-header-row ul{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+}
+
+.site-header-row li a{
+    font-size: 2.4rem;
+    padding:0 1.6rem;
+}
+
+.site-header-row li a:last-of-type{
+    padding-right: 0;
+}
+
+.site-header-row nav ul li  {
+    position: relative;
+    
+}
+
+.site-header-row nav ul li:last-of-type a{
+    z-index: 2;
+    position: relative; 
+}
+
+.site-header-row nav ul li:last-of-type::after{
+    content:"";
+    background-color: var(--light-pink);
+    position: absolute;
+    bottom:0;
+    left:1.6rem;
+    right:0;
+    z-index: 1;
+    height:1rem;
+}
+
+
+
+/* Hero Block CSS */
+
+.hero-block-row{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-gap:0 22.2rem;
+    align-items: flex-end;
+}
+
+.hero-block-heading h1 span{
+    position: relative;
+}
+.hero-block-heading h1 span>span{
+    z-index: 1;
+}
+
+.hero-block-heading h1>span::after{
+    content:'';
+    position:absolute;
+    left:0;
+    right:2.2rem;
+    bottom: 0;
+    height: 2.2rem;
+    background-color: var(--light-pink);
+}
+
+/* Services Card CSS */
+
+.services-heading h2{
+    padding-bottom: 1.4rem;
+}
+
+
+.services-card{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:3.5rem;
+    margin: 0 -3rem;
+}
+
+.service-desc-card{
+    padding: 15.2rem 5.2rem 12.5rem;
+}
+
+.service-desc-card-image{
+    width:25%;
+}
+
+.service-desc-card h3{
+    margin-top: 1.6rem;
+}
+.service-card {
+    transform: rotate(-4deg);
+    border:2px solid #000000;
+    border-radius: 0.8rem;
+    position: relative;
+}
+.service-card:nth-of-type(3) {
+    background-color: var(--light-pink);
+    border-color:var(--dark-pink);
+    
+}
+.service-card:nth-of-type(2) {
+    background-color: var(--light-blue);
+    transform: rotate(5.5deg);
+    border-color:var(--dark-blue);
+   
+}
+.service-card:nth-of-type(1) {
+    background-color: var(--light-yellow);
+    border-color: var(--dark-yellow);
+    
+}
+
+.services-card .service-card .service-tool{
+    position: absolute;
+    padding:1rem 2rem;
+    top:8.6rem;
+    right:-3rem;
+    transform: rotate(4deg);
+}
+
+.service-card:nth-of-type(1) .service-tool{
+    background-color: var(--light-blue);
+}
+
+.service-card:nth-of-type(2) .service-tool{
+    background-color: var(--light-pink);
+    transform:rotate(-5.5deg);
+    top:-2rem;
+    right:2.8rem;
+}
+
+.service-card:nth-of-type(3) .service-tool{
+    background-color: var(--light-yellow);
+}
+
+/* Featured Projects CSS */
+#featuredprojects .space{
+    padding:7rem 3rem;
+}
+.featured-projects-row{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-gap:3.4rem;
+}
+
+.featured-projects-heading{
+    padding-top: 11.8rem;
+}
+
+.featured-projects-heading h2{
+    margin-bottom: 1.4rem;
+}
+
+.featured-projects-heading img{
+    transform:rotate(-70deg);
+    margin-bottom:2.4rem;
+}
+
+.arrowImageParent{
+    text-align: right;
+}
+
+.featured-projects-details{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap:3.4rem;
+}
+
+.project-details-img img{
+    width:100%;
+}
+
+.project-details-desc h3{
+    font-family: "Handlee", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size:2.4rem;
+}
+
+.project-details{
+    border:2px solid #000000;
+    padding:2rem;
+}
+
+.project-details-desc{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    grid-gap:0rem 3.7rem;
+    padding: 1.1rem 0;
+}
+
+
+.btn-group a{
+    padding: 0.9rem 1.8rem;
+    border-radius: 0rem 2rem 2rem 2rem;
+    color:var(--white);
+    display: block;
+    margin-left: 2.5rem;
+}
+
+/* Work Experience CSS */
+
+#workexperience .space{
+    padding:7rem 3rem;
+}
+
+.work-experience-row{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-gap:0 7.7rem;
+}
+
+.work-experience-heading{
+    padding-top: 11.8rem;
+    
+}
+
+.work-experience-heading h2{
+    margin-bottom: 1.4rem;
+}
+.work-experience-heading img{
+    transform:rotate(-70deg);
+    margin-bottom: 2.4rem;
+}
+
+.work-experience-details{
+    border-left:2px solid var(--black);
+    border-right:2px solid var(--black);
+    display:grid;
+    grid-template-rows: repeat(3, auto);
+    grid-gap:3.7rem;
+    padding: 7.1rem;
+    margin:0 6.1rem;
+    position: relative;
+}
+
+.work-experience-details::before{
+    content: "";
+    position:absolute;
+    top:4rem;
+    left:-4rem;
+    right:-4rem;
+    height: 0.2rem;
+    background-color: #000;
+}
+
+.work-experience-details::after{
+    content: "";
+    position:absolute;
+    bottom:4rem;
+    left:-4rem;
+    right:-4rem;
+    height: 0.2rem;
+    background-color: #000;
+}
+
+.work-experience-details-desc{
+    display:grid;
+    grid-template-columns: repeat(2,auto);
+    grid-gap:3.7rem;
+}
+
+.work-experience-details-desc:nth-of-type(1) .experience-no{
+    background-color: var(--light-yellow);
+    border:2px solid var(--dark-yellow);
+}
+
+.work-experience-details-desc:nth-of-type(2) .experience-no{
+    background-color: var(--light-blue);
+    border:2px solid var(--dark-blue);
+}
+
+.work-experience-details-desc:nth-of-type(3) .experience-no{
+    background-color: var(--light-pink);
+    border:2px solid var(--dark-pink);
+}
+
+.experience-no{
+    width:10rem;
+    font-family: Handlee;
+    font-size: 4.8rem;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.experience-desc .heading{
+    margin-bottom: 0.6rem;
+}
+
+.experience-desc .desc{
+    font-size: 1.8rem;
+    margin-bottom: 0.3rem;
+} 
+
+.experience-desc .date{
+    font-size:1.6rem;
+}
+
+/* Contact Form CSS */
+
+#contact .space{
+    padding:7rem 3rem;
+}
+
+
+.contact-row{
+    display:grid;
+    grid-template-columns: 1fr 3fr;
+    grid-gap:20.9rem;
+}
+
+.contact-here-heading h2{
+    padding-bottom: 1.4rem;    
+}
+
+.contact-here-heading img{
+    transform:rotate(-70deg);
+}
+
+.contact-form{
+    padding: 0 6rem;
+}
+
+.contact-form .form-control:nth-of-type(1) label{
+    background-color: var(--light-pink);
+}
+.contact-form .form-control:nth-of-type(2) label{
+    background-color: var(--light-blue);
+}
+
+.contact-form .form-control:nth-of-type(3) label{
+    background-color: var(--light-yellow);
+}
+
+.contact-form .btn-send{
+    text-align: right;
+}
+
+
+/* Footer CSS */
+.site-footer-row{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.site-footer-row ul{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    grid-gap:0 7.7rem;
+}
+
+.site-footer-row li{
+    font-size: 2.4rem;
+    background-color: #000;
+    color:#fff;
+}
+
+.copyright{
+    text-align: center;
+    padding:3.9rem 0;
+}
+
+
+
+
+
+
+

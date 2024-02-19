@@ -1,0 +1,208 @@
+@media screen and (min-width:1024px) and (max-width:1200px ) {
+    .services-card .service-card .service-tool{
+        right: -1rem;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .services-card{
+        margin:0;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1023px ) {
+    .services-card{
+        grid-template-columns: repeat(2,1fr);
+    }
+    
+}
+@media screen and (max-width: 1023px) {
+    .featured-projects-row,.work-experience-row, .contact-row {
+        grid-template-columns: 1fr;
+        grid-gap:3rem 3.4rem;
+    }
+    .arrowImageParent{
+        text-align: left;
+    }
+    .contact-form{
+        padding: 0;
+    }
+    .hero-block-row{
+        grid-gap:11.1rem;
+    }
+}
+
+@media screen and (max-width:767px){
+
+    h1{
+        font-size: 3.2rem;
+    }
+
+    h2{
+        font-size: 2rem;
+    }
+    h3{
+        font-size: 2.4rem;
+    }
+    .cta{
+        padding: 0.6rem 1.2rem;
+        font-size: 1.6rem;
+    }
+
+    .site-header-row li a, p,label{
+        font-size: 1.6rem;
+    }
+
+    input[type="text"]{
+        font-size: 1.5rem;
+    }
+
+    .hero-block-row, .featured-projects-row, .work-experience-row, .services-card{
+        grid-template-columns: 1fr;
+    }
+
+    #featuredprojects .space, #workexperience .space, #contact .space{
+        padding: 3.5rem 3rem;
+    }
+
+    .arrowImageParent img{
+        transform: rotate(0deg);
+    }
+
+
+    .site-header-row{
+        justify-content: space-between;
+        grid-gap:1rem;
+        
+    }
+
+    .hero-block-row{
+        grid-gap:1.7rem;
+    }
+
+    .hero-block-img img{
+        width:100%
+    }
+
+    .hero-block-heading{
+        max-width:23.7rem;
+    }
+
+    .services-card{
+        grid-gap:0;
+    }
+
+    .service-card{
+        margin:1.2rem;
+    }
+
+    .service-card:nth-of-type(1) .service-tool{
+        max-width:12rem;
+        padding: 0;
+    }
+
+
+    .service-card:nth-of-type(2) .service-tool{
+        left:3rem;
+        max-width:7rem;
+        padding: 0;
+    }
+
+    .service-card:nth-of-type(3) .service-tool{
+        left:-3rem;
+        max-width:11rem;
+        padding:0;
+    }
+
+    .service-desc-card {
+        padding: 12.2rem 5.5rem 5.9rem;
+    }
+
+    .featured-projects-heading, .work-experience-heading, .contact-here-heading {
+        padding-top: 0rem;
+        max-width:50%;
+    }
+
+    .featured-projects-details{
+        grid-template-columns: 1fr;
+
+    }
+
+    .project-details{
+        border-radius: 1rem;
+    }
+
+    .project-details-desc{
+        grid-gap:0;
+    }
+
+    .project-details-desc h3{
+        font-size: 2rem;
+    }
+
+    .btn-group a {
+        text-align: center;
+        padding: 0.6rem 1.3rem;
+        font-size: 1.3rem;
+    }
+
+    .work-experience-details{
+        border:0;
+        padding: 0;
+        margin: 0;
+    }
+    .experience-no{
+        font-size: 3.1rem;
+    }
+
+    .work-experience-details-desc{
+        grid-gap:0 1.5rem;
+    }
+
+    .work-experience-details-desc .heading{
+        font-size: 1.6rem;
+    }
+    .work-experience-details-desc .desc{
+        font-size: 1.5rem;
+    }
+    .work-experience-details-desc .date{
+        font-size: 0.9rem;
+    }
+
+    .work-experience-details::after{
+        display: none;
+    }
+
+    .work-experience-details::before{
+        display: none;
+    }
+
+    .site-footer-row{
+        display: block;
+    }
+
+    .site-footer-row .logo{
+        max-width:11.7rem;
+    }
+
+    .site-footer-row .social-links{
+        width:75%;
+    
+    }
+
+    .site-footer-row ul{
+        grid-gap:0 4rem;
+    }
+
+    .site-footer-row li {
+        
+        font-size:1.6rem;
+        
+    }
+    .copyright{
+        text-align: left;
+    }
+    
+
+
+}
